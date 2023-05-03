@@ -1,4 +1,4 @@
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 416px) and (max-width: 1280px) {
     .image_container {
         height: 50vh;
     }
@@ -6,7 +6,7 @@
         object-fit: cover;
         object-position: center;
         width: auto !important;
-        width: 100vh !important;
+        width: 100% !important;
         height: 50vh;
     }
     .navbar {
@@ -41,15 +41,15 @@
     }
     .row2 {
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(3, 1fr);
-        column-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        column-gap: 50px;
         width: fit-content;
-        height: fit-content;
         row-gap: 20px;
         padding-left: 10px;
         padding-bottom: 20px !important;
         margin-bottom: 0;
+        margin-left: 0 !important;
     }
     .bruh {
         margin-left: 0 !important;
@@ -58,7 +58,7 @@
         margin-left: 10px !important;
     }
     .row2 .section {
-        width: 47vh;
+        width: 40vw !important;
     }
     #certificate h2,
     ul {
@@ -81,6 +81,13 @@
     }
     #Project {
         padding-left: 10px !important;
+        width: inherit;
+    }
+    #Project .part {
+        width: 28vw !important;
+    }
+    #Project .part img {
+        width: inherit !important;
     }
     .be_smol img {
         width: 33vh !important;

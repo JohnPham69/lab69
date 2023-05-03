@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    width: 100vw;
 }
 
 p {
@@ -170,7 +171,7 @@ li {
 
 .row1 {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50vw 50vw;
     grid-template-rows: 1fr;
 }
 
@@ -188,20 +189,26 @@ li {
 
 .row2 {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    width: fit-content;
-    grid-template-rows: repeat(2, 1fr);
-    height: fit-content;
-    column-gap: 20px;
-    row-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100vw;
+    grid-template-rows: auto;
+    column-gap: 50px;
+    row-gap: 25px;
     padding-left: 50px;
 }
 
 .col {
     padding-top: 20px;
+    width: 100% !important;
+}
+
+.new_div {
     padding: 1em;
     border: 1px solid black;
-    width: 55vh;
+}
+
+.more {
+    height: 0;
 }
 
 .cv-page {
@@ -326,7 +333,7 @@ span {
 #lolol {
     background-color: #0352fd;
     border: none;
-    color: #000;
+    color: #fff;
     font-size: 15px;
     border-radius: 10px;
 }
